@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application Tracker</title>
+</head>
+<body>
+    <h1>Job Application Tracker</h1>
+    <h2>{{ application.company.name }}</h2>
+    <p><strong>Position:</strong> {{ application.position }}</p>
+    <p><strong>Status:</strong> {{ application.status }}</p>
+    <p><strong>Interview Date:</strong> {{ application.interview_date }}</p>
+    <a href="{% url 'application_list' %}">Back to Application List</a>
+</body>
+</html>
